@@ -314,10 +314,8 @@
                                     "key_code": "left_arrow",
                                     "modifiers": {
                                         "mandatory": [
+                                            "left_control",
                                             "left_option"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -337,10 +335,8 @@
                                     "key_code": "right_arrow",
                                     "modifiers": {
                                         "mandatory": [
+                                            "left_control",
                                             "left_option"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
