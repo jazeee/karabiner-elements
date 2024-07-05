@@ -286,7 +286,7 @@
                                     "key_code": "l",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_option"
+                                            "option"
                                         ],
                                         "optional": [
                                             "any"
