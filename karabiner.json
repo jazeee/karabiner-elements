@@ -18,6 +18,65 @@
                 },
                 "rules": [
                     {
+                        "description": "Home/End key to beginning/end of the sentence (Ctrl + A, E). Only terminal",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.apple\\.Terminal$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "home",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "a",
+                                        "modifiers": [
+                                            "left_control"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.apple\\.Terminal$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "end",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "e",
+                                        "modifiers": [
+                                            "left_control"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "PC-Style Find Next/prev",
                         "manipulators": [
                             {
@@ -421,7 +480,7 @@
                         ]
                     },
                     {
-                        "description": "End key to the end of the sentence (Command + Right). Doesnt work in terminal",
+                        "description": "End key to the end of the sentence (Command + Right). Except terminal",
                         "manipulators": [
                             {
                                 "conditions": [
